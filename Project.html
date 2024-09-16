@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+       <!-- body {
+        background-image: url(./first-bg\\(1\).png);
+           }  -->
+       nav {
+         width: 70px;
+         height:157vh;
+         background-color: plum;
+         text-align: center;
+         padding-top: 35px;
+         font-size: 30px;
+       }
+       .main1 {
+         color: white;
+         <!-- background-color: blueviolet; -->
+         height: 100%;
+         display: flex;
+         align-items:baseline;
+         gap: 30px;
+       }
+       .main1 .div1{
+           margin-left:400px;
+           margin-top:50px;
+           font-family:Verdana, Geneva, Tahoma, sans-serif;
+           font-size: 50px;
+       }
+       .div1 {
+         font-size: 30px;
+       }
+       .div2 {
+         color: white;
+         background-color: blueviolet;
+       }
+       .div2 h2{
+           text-decoration:underline;
+       }
+       .main2 {
+         background-image: url(./second-bg\\(2\).png);
+       }
+       .div4 {
+         color: white;
+       }
+       .profile {
+         display: flex;
+         gap:130px;
+         background-color: blueviolet;
+         width: 700px;
+         margin-left: 500px;
+         margin-top: 30px;
+         padding: 25px;
+       }
+       .div2 button{
+           background-color: red;
+           padding: 10px;
+       }
+       .backgroundimg1{
+           background: url("./first-bg\ \(1\).png");
+           background-size: cover;
+           height: 600px;
+       }
+       .backgroundimg2{
+           background: url("./second-bg\ \(2\).png");
+           background-size: cover;
+           height: 600px;
+           margin-top:-20px;
+       }
+       .backgroundimg3{
+           background: url("./third-bg\ \(2\).png");
+           background-size: cover;
+            height: 600px;
+            margin-top:-25px;
+
+       }
+       .backgroundimg4{
+           background: url("./third-bg\ \(2\).png");
+           background-size: cover;
+           height: 450px;
+           margin-top: -25px;
+       }
+       .aboutus img{
+           margin-top:10px;
+           margin-left:300px;
+           z-index:0;
+       }
+       .aboutus h2{
+            margin-top:-120px;
+            padding-top: 50px;
+             margin-left: 500px;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             color: white;
+       }
+       .container{
+           width: 320px;
+           height: 290px;
+           background-color: white;
+           padding: 15px;
+           position: relative;
+           top:-250px;
+           left: 750px;
+        
+       }
+       .container h1{
+           background-color: white;
+           text-decoration: underline;
+       }
+       .container button{
+           background-color: red;
+       }
+       .project{
+           display: flex;
+           gap:50px;
+           margin-left: 200px;
+           margin-top: 30px;
+       }
+       .recent{
+         text-align: center;
+         color: white;
+         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       .content1{
+           width:190px;
+           height:170px;
+           background-color:white;
+           padding-left: 20px;
+           padding-right: 20px;
+           margin-left: -5px;
+      }
+         .content1 button{
+          background-color:red;
+          padding: 4px;
+       }
+       .content1 h3{
+           text-decoration: underline;
+       }
+         .content2{
+           width:190px;
+           height:170px;
+           background-color:white;
+           padding-left: 20px;
+           padding-right: 20px;
+           margin-left:-30px;
+       }
+       .content2 h3{
+           text-decoration: underline;
+       }
+        .content2 button{
+            background-color: red;
+            padding: 4px;
+        }
+         .content3{
+           width:190px;
+           height:170px;
+           background-color:white;
+           padding-left: 20px;
+           padding-right: 20px;
+           margin-left: -30px;
+       }
+       .content3 h3{
+           text-decoration: underline;
+       }
+       .content3 button{
+           background-color: red;
+           padding: 4px;
+       }
+       .projectcontent{
+           display: flex;
+           gap: 110px;
+           margin-left:220px;
+           margin-top: -50px;
+       }
+       .ContactUs h2{
+           color: white;
+           text-align: center;
+       }
+       .ContactUs {
+               text-align: center;
+       }
+       .ContactUs button{
+           background-color: red;
+           padding: 3px;
+           margin-right: 2px;
+       }
+       .ContactUs fieldset{
+           padding: 50px;
+           margin-right: 800px;
+           margin-left: 500px;
+       }
+       .container1{
+         background-color: aliceblue;
+           padding: 30px;
+           width: 200px;
+           margin-left: 750px;
+           margin-top: -250px;
+       }
+       .Footer{
+           color: white;
+           text-align: center;
+           margin-top: 90px;
+       }
+       nav{
+           position: absolute;
+           top:10px;
+           height: 2080px;
+       }
+
+     @media screen and (min-width:200px) and (max-width:550px) {
+         nav{
+             width:150px;
+             margin-left:-7px;
+             height: 105em;
+         }
+         .backgroundimg1{
+         width:78em;
+         height:80em;
+           
+         }
+            .backgroundimg2{
+         width:78em;
+         height:90em;
+        }
+        .backgroundimg3{
+             width:78em;
+              height:160em;
+
+        }
+            .backgroundimg4{
+             width:78em;
+              height:100em;
+
+        }
+         .profile{
+             margin-left: 130px;
+             font-size:50px;
+             width:1000px;
+         }
+          .profile button{
+              width:250px;
+              height: 150px;
+              font-size: 30px;
+          }
+          .profile{
+              margin-left:165px;
+           
+
+          }
+          .img1{
+            float: inline-end;
+            margin-top:200px;
+            margin-left:-50px;
+
+         
+          }
+          .div2{
+              font-size:50px;
+             
+          }
+          .aboutus img{
+              width: 800px;
+              height: 600px;
+          }
+          .container{
+              height: 800px;
+              width: 450px;
+              font-size: 30px;
+          }
+          .container button{
+              width: 300px;
+              height:100px;
+              font-size: 35px;
+          }
+           .container p{
+              font-size:40px;
+           }
+           .aboutus h2{
+               font-size:70px;
+           }
+           .project{
+            flex-direction: column;
+
+           }
+           .div img{ 
+               width: 500px;
+           }
+           .recent{
+               font-size:55px;
+           }
+           .project img{
+               width: 600px;
+               height: 700px;
+           }
+           .content1{
+               position: relative;
+               top:-52em;
+               left: 10em;
+               width: 500px;
+               height: 570px;
+               font-size: 40px;
+           }
+           .content1 button{
+                  width: 300px;
+              height:100px;
+              font-size: 35px;
+           }
+           .content2 {
+               position: relative;
+               top:-30em;
+               padding: 20px;
+               left:-1em;
+               width: 500px;
+               height: 570px;
+               font-size:45px
+           }
+           .content2 button{
+               width: 300px;
+               height: 100px;
+               font-size: 30px;
+           }
+         .content3 {
+               position: relative;
+               top:-10em;
+               padding: 20px;
+               left:-10em;
+               width: 500px;
+               height: 570px;
+               font-size:45px
+           }
+           .content3 button{
+               width: 300px;
+               height: 100px;
+               font-size: 30px;
+           }
+           .ContactUs input{
+               <!-- height: 200px; -->
+               width: 700px;
+           }
+
+
+         
+     }
+       
+    </style>
+  </head>
+  <body>
+    <div class="backgroundimg1">
+      <div class="main1">
+        <b><div class="div1">STAK</div></b>
+        <b> <div>HTML CSS</div></b>
+      </div>
+      <div class="profile">
+        <div class="div2">
+          <h2>NEW <span style="color: red;">STACKED</span> TEMPLATE</h2>
+          <p>Stacked is brought to you by <span style="color: yellow;">templatemo</span>.Lorem ipsum</p>
+          <p>dolor sit amet,consectetur adipiscing elit etiam sit amet</p>
+          <p>ante vehicula, aliquam mauris in, luctus neque</p>
+          <button>DISCOVER MORE</button>
+        </div>
+        <div class="img1">
+          <img src="./right-home-image.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="backgroundimg2">
+      <div class="aboutus">
+        <h2>ABOUT US</h2>
+        <img src="https://static1.bigstockphoto.com/7/2/3/large2/327672403.jpg" width="700px" height="300px" alt="" />
+      </div>
+      <div class="container">
+        <h1>SOFTWARE DEVELOPMENT LIFE CYCLE</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+          reiciendis odit eveniet eligendi officia fugit nulla optio pariatur?
+          Placeat aliquid assumenda, accusantium deleniti dignissimos non.
+        </p>
+        <button>DISCOVER MORE</button> 
+      </div>
+    </div>
+    <div class="backgroundimg3">
+      <div class="recent">
+        <h2>RECENT PROJECTS</h2>
+      </div>
+      <div class="project">
+        <div>
+          <img
+            src="https://www.springboard.com/blog/wp-content/uploads/2021/11/Intermediate-Machine-Learning-Projects.jpg"
+            width="260"
+            height="300"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.springboard.com/blog/wp-content/uploads/2021/11/Intermediate-Machine-Learning-Projects.jpg"
+            width="260"
+            height="300"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://www.springboard.com/blog/wp-content/uploads/2021/11/Intermediate-Machine-Learning-Projects.jpg"
+            width="260"
+            height="300"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="projectcontent">
+        <div class="content1">
+          <h3>ART WORK</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt,
+            ab.
+          </p>
+          <button>DISCOVER MORE</button>
+        </div>
+        <div class="content2">
+          <h3>ART WORK</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt,
+            ab.
+          </p>
+          <button>DISCOVER MORE</button>
+        </div>
+        <div class="content3">
+          <h3>ART WORK</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt,
+            ab.
+          </p>
+          <button>DISCOVER MORE</button>
+        </div>
+      </div>
+    </div>
+    <div class="backgroundimg4">
+      <div class="ContactUs">
+        <h2>CONTACT US</h2>
+        <fieldset>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Your Name"
+          /><br /><br />
+          <input type="text" name="" id="" placeholder="Email" /><br /><br />
+          <textarea name="" id="" placeholder="Message"></textarea><br /><br />
+          <button>SEND MESSAGE</button>
+        </fieldset>
+      </div>
+      <div class="container1">
+        <p>
+          Lorem ipsum dolor ,consectetur adipisicing elit. Nunc purus ligula,
+          ullamcorper id velit id,vestibulum auc sapien.Sed quis mauris eget sem
+          imperdient rhoncus. 3344 Etiam mauris erat,
+        </p>
+      </div>
+      <div class="Footer">
+       <p> Copyright @ 2024 Your Company|Designed by <span style="color: lime;">Templatemo</span></p>
+      </div>
+    </div>
+ 
+    <nav>
+          <ion-icon name="arrow-up-outline"></ion-icon>
+      <br />
+      <br />
+      <br />
+      <ion-icon name="home-outline"></ion-icon>
+      <br />
+      <br />
+      <br />
+      <ion-icon name="people-outline"></ion-icon>
+      <br />
+      <br />
+      <br />
+      <ion-icon name="image-outline"></ion-icon>
+      <br />
+      <br />
+      <br />
+      <ion-icon name="call-outline"></ion-icon>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <ion-icon name="arrow-up-outline"></ion-icon>
+      <br />
+      <br />
+      <br />
+      <ion-icon name="home-outline"></ion-icon>
+      <br />
+      <br />
+      <br />
+      <ion-icon name="people-outline"></ion-icon>
+      <br />
+      <br />
+      <br />
+      <ion-icon name="image-outline"></ion-icon>
+      <br />
+      <br />
+      <br />
+      <ion-icon name="call-outline"></ion-icon>
+    </nav>
+  </body>
+</html>
